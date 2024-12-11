@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main"><!--This is the main content of the page -->
+        <div class="top"> <!--Top section of the page-->
+            <div class="nav"><!-- This div container is for navigation menu -->
+                <i class="fa fa-bars menu-icon" aria-hidden="true"></i> <!--Menu icon from Font awesome-->
+                <div class="links-div"> <!--This container is for the nav links-->
+                    <ul class="links"> <!--An unordered list holds our nav links-->
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown"> <!--This list item is gonna be our dropdown menu-->
+                            <a href="#">Quizzes</a> <!--No link for now, page doesn't exist yet-->
+                            <ul class="dropdown-menu"><!--An unordered list for our dropdown menu items-->
+                                <li><a href="#">Easy</a></li>
+                                <li><a href="#">Medium</a></li>
+                                <li><a href="#">Difficult</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="About.html">About</a></li> <!--Links to other pages in main nav bar-->
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="signup"><!--Here is a container for our sign up and log in links -->
+                <ul>
+                    <li><a href="../SignupLogIn/signup.html">Sign up</a></li>
+                    <li><a href="../SignupLogIn/login.html">Log in</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <section class="center"> <!--In the center we will have the following-->
+            <h1 class="h1">Welcome to Quizzes</h1><!--The main title of the page-->
+            <p style="text-align: center; font-weight: bold;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quaerat corrupti!</p> <!--inline styling-->
+        </section>
+        <section class="quiz-container"><!--Here is our container for our table-->
+            <!--Quiz Table-->
+            <div class="quiz-table">
+                <h2 style="text-align: center; margin-bottom: 1em; font-size: 28px; font-weight: bold;">Featured Quizzes:</h2>
+                <table>
+                    <thead> <!--The table header will be like this-->
+                        <tr>
+                            <th>Category</th>
+                            <th>Easy</th>
+                            <th>Medium</th>
+                            <th>Difficult</th>
+                        </tr>
+                    </thead>
+                    <tbody><!--The stuff inside the table or table body will be like this:-->
+                        <tr>
+                            <td> <img src="../Images/elephants2.jpg" alt="Elephants mom and baby" class="category-image">Animals</td>
+                            <td><a href="#">Start Quiz</a></td> <!--Links to quizzes will go here-->
+                            <td><a href="#">Start Quiz</a></td>
+                            <td><a href="#">Start Quiz</a></td>
+                        </tr>
+                        <tr> <!--table rows are as follows-->
+                            <td><img src="../Images/food.jpg" alt="Smoothie bowl with berries" class="category-image">Food</td>
+                            <td><a href="#">Start Quiz</a></td>
+                            <td><a href="#">Start Quiz</a></td>
+                            <td><a href="#">Start Quiz</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../Images/weather2.jpg" alt="Thunder" class="category-image">Weather</td>
+                            <td><a href="#">Start Quiz</a></td>
+                            <td><a href="#">Start Quiz</a></td>
+                            <td><a href="#">Start Quiz</a></td>
+                        </tr>
+                        <tr>
+                            <td><img src="../Images/colors.jpg" alt="Colored pencils" class="category-image">Colors</td>
+                            <td><a href="#">Start Quiz</a></td>
+                            <td><a href="#">Start Quiz</a></td>
+                            <td><a href="#">Start Quiz</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script> <!--External JS file link is here-->
+</html>
